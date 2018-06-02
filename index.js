@@ -127,7 +127,7 @@ exports.isNumber = function(n) {
 }
 exports.snowflake = function(snowflake){
   return new Date((snowflake >> 22) + 1420070400000).toUTCString()
-}
+}   
 /**
  * Converts html tags to exscaped form
  * @param  {String} text Text to escape

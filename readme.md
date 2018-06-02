@@ -4,6 +4,8 @@ Utilities usable in any Discord Bot
 Docs:
 Full docs [here](https://axelgreavette.github.io/BotUtils/)
 
+.snowflake(snowflake) : Date of given snowflake
+
 .randColor() : Gives you a random color code
 
 .randInt(min, max) : Gives you a random number between `min` and `max`
