@@ -4,6 +4,8 @@ Utilities usable in any Discord Bot
 Docs:
 Full docs [here](https://axelgreavette.github.io/BotUtils/)
 
+.shuffle() : Shuffles the attached array
+
 .snowflake(snowflake) : Date of given snowflake
 
 .randColor() : Gives you a random color code
@@ -39,6 +41,10 @@ How to use:
 ```
 var util = require('bot-utils')
 
+console.log(util.snowflake(453763441732354058))
+//Wed, 06 Jun 2018 03:33:55 GMT
+console.log([1,2,3,4,5].shuffle())
+//[4,5,1,2,3]
 console.log(util.randColor())
 //14013163
 console.log(util.randInt(1,5))

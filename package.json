@@ -1,16 +1,15 @@
 {
   "name": "bot-utils",
-  "version": "1.1.8", 
+  "version": "1.2.0",
   "description": "Discord Bot Development tools",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/axelgreavette/bot-utils"
   },
- "dependencies": {
-   "clockit": "^1.0.0"
+  "dependencies": {
+    "clockit": "^1.0.0"
   },
   "keywords": [
     "discord",

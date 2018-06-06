@@ -12,6 +12,21 @@ exports.randInt = function(min, max) {
     return Math.floor(Math.random() * (max - min - 1)) + min;
 }
 
+
+/**
+ * Credits to Cadence#3263
+ * Shuffles an array psuedorandomly
+ * @returns {Array} An array which has psuedorandomly shuffled
+ */
+Array.prototype.shuffle = function(){
+  let old = [...this];
+  let output = [];
+  while (old.length) {
+      let random = old.splice(Math.floor(Math.random()*old.length), 1)[0];
+      output.push(random);
+  }
+  return output
+}
 /**
  * Creates a random hex colour
  * @return {Int} Random hex color code
@@ -126,8 +141,8 @@ exports.isNumber = function(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 exports.snowflake = function(snowflake){
-  return new Date((snowflake >> 22) + 1420070400000).toUTCString()
-}   
+  return new Date((snowflake*Math.pow(2, -22)) + 1420070400000).toUTCString()
+}
 /**
  * Converts html tags to exscaped form
  * @param  {String} text Text to escape
