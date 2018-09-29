@@ -24,6 +24,8 @@ Full docs [here](https://axelgreavette.github.io/BotUtils/)
 
 .isNumber(input) : Checks if the input is a number
 
+.hasNumber(input) : Checks if the input contains a number
+
 .removeHtml(string) : Removes the html from the string
 
 .randItemFromArray(array) : Random item from inputted array
