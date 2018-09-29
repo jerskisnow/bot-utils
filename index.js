@@ -140,6 +140,14 @@ exports.round = function(number, decimalPlace) {
 exports.isNumber = function(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
+/**
+ * Checks if string contains number
+ * @param  {String} str Value to check
+ * @return {Boolean}   If true or false
+ */
+exports.hasNumber = function(str) {
+  return /\d/.test(str);
+}
 exports.snowflake = function(snowflake){
   return new Date((snowflake*Math.pow(2, -22)) + 1420070400000).toUTCString()
 }
