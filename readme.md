@@ -1,6 +1,7 @@
 # Bot-Utils
 [![NPM](https://nodei.co/npm/bot-utils.png?)](https://nodei.co/npm/bot-utils/) 
 [![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils)
+
 Easy to use utilities for JavaScript written Discord bots. Or you can use them any Javascript program...
 ## Documentation
 | Method | Description |
