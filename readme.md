@@ -1,4 +1,6 @@
-<div style="text-align:center"><img src="https://axelgreavette.js.org/img/portfolio/botutils.png" /></div>
+<p align="center"> 
+<img src="https://axelgreavette.js.org/img/portfolio/botutils.png">
+</p>
 
 # Bot-Utils
 [![NPM](https://nodei.co/npm/bot-utils.png?)](https://nodei.co/npm/bot-utils/) 
