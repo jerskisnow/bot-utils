@@ -1,46 +1,30 @@
+# Bot-Utils
+[![NPM](https://nodei.co/npm/bot-utils.png?)](https://nodei.co/npm/bot-utils/) 
+[![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils)
+Easy to use utilities for JavaScript written Discord bots. Or you can use them any Javascript program...
+## Documentation
+| Method | Description |
+|--|--|
+| `.shuffle(array)` | Shuffles the given `array` |
+|`.snowflake(snowflake)`| Date of given `snowflake` |
+|`randColor()`| Returns a random `0x` prefixed Hex colour code |
+|`.randInt(min, max)`| Returns a random integer from a range of `mid` to `max` |
+|`.uptime()` |  Returns process uptime |
+|`.osUptime()` | Returns system uptime |
+| `.capital(string)` | Returns the `string` with the first letter capitalized |
+| `.randAlphaNum(len)` | Returns a random alphanumeric |
+| `.round(number, decimal-place)` | Returns a the given `number` rounded to the given  `decimal-place` | 
+| `.isNumber(input)` | Checks if `input` is a number | 
+| `.hasNumber(input)` | Checks if `input` contains a number |
+|`.escapeHtml(string)` | Escapes HTML in the given `string`|
+| `.randItemFromArray(array)` | Picks a random item from the given `array`|
+|`.arrayTo(number)`| Creates an empty array with `number` as the amount of entries |
+|`.isArray(array)` | Checks if `array` is in fact, and array |
+|`.start()` | Start the CPU monitor |
+|`.usage()` | Returns the CPU usage for the time when it was called |
+## Usage Examples
 
-Utilities usable in any Discord Bot
-
-Docs:
-Full docs [here](https://axelgreavette.github.io/BotUtils/)
-
-.shuffle() : Shuffles the attached array
-
-.snowflake(snowflake) : Date of given snowflake
-
-.randColor() : Gives you a random color code
-
-.randInt(min, max) : Gives you a random number between `min` and `max`
-
-.uptime() : Returns uptime
-
-.osUptime() : OS Uptime
-
-.capital(string) : Capitalizes the first letter of the string
-
-.randAlphaNum(len) : Random Alpha numeric
-
-.round(number, decimal place) : Rounds the inputted number to the given decimal place
-
-.isNumber(input) : Checks if the input is a number
-
-.hasNumber(input) : Checks if the input contains a number
-
-.removeHtml(string) : Removes the html from the string
-
-.randItemFromArray(array) : Random item from inputted array
-
-.arrayTo(number) : Array of numbers from 0 to inputed one
-
-.isArray(array) : Checks if the input is an array
-
-.start() : Start CPU Monitor
-
-.usage() : CPU Usage after starting monitor
-
-How to use:
-
-```
+```js
 var util = require('bot-utils')
 
 console.log(util.snowflake(453763441732354058))
@@ -48,7 +32,7 @@ console.log(util.snowflake(453763441732354058))
 console.log([1,2,3,4,5].shuffle())
 //[4,5,1,2,3]
 console.log(util.randColor())
-//14013163
+//0x140131
 console.log(util.randInt(1,5))
 //4
 console.log(util.uptime())
@@ -69,11 +53,11 @@ console.log(util.randItemFromArray(['2', 12, 'four']))
 //12
 console.log(util.arrayTo(5))
 //[1,2,3,4,5]
-console.log(util.isArray(['1','2','3','4'])
+console.log(util.isArray(['1','2','3','4', `5`])
 //true
 utils.start()
 console.log(utils.usage())
-4.249294924924
+//4.249294924924
+console.log(utils.hasNumber('1 two three four five')
+//true
 ```
-
-More coming in future
