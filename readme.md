@@ -1,3 +1,5 @@
+[![Logo](https://axelgreavette.js.org/img/portfolio/botutils.png)](https://axelgreavette.js.org/img/portfolio/botutils.png)
+
 # Bot-Utils
 [![NPM](https://nodei.co/npm/bot-utils.png?)](https://nodei.co/npm/bot-utils/) 
 
