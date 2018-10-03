@@ -8,6 +8,9 @@
 [![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils)
 
 Easy to use utilities for JavaScript written Discord bots. Or you can use them any Javascript program...
+
+For the version using classes visit [here](https://github.com/axelgreavette/bot-utils)
+
 ## Documentation
 | Method | Description |
 |--|--|
