@@ -16,11 +16,11 @@ For the version using classes visit [here](https://github.com/axelgreavette/bot-
 |--|--|
 | `.shuffle(array)` | Shuffles the given `array` |
 |`.snowflake(snowflake)`| Date of given `snowflake` |
-|`randColor()`| Returns a random `0x` prefixed Hex colour code |
+|`.randColor()`| Returns a random `0x` prefixed Hex colour code |
 |`.randInt(min, max)`| Returns a random integer from a range of `mid` to `max` |
 |`.uptime()` |  Returns process uptime |
 |`.osUptime()` | Returns system uptime |
-| `.capital(string)` | Returns the `string` with the first letter capitalized |
+|`.capital(string)` | Returns the `string` with the first letter capitalized |
 | `.randAlphaNum(len)` | Returns a random alphanumeric |
 | `.round(number, decimal-place)` | Returns a the given `number` rounded to the given  `decimal-place` | 
 | `.isNumber(input)` | Checks if `input` is a number | 
