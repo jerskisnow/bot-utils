@@ -1,34 +1,52 @@
-var utils = require('./index.js')
+var util = require('./index.js')
 
-console.log(util.snowflake(453763441732354058))
+test("converts 453763441732354058 snowflake to Wed, 06 Jun 2018 03:33:55 GMT", () => {
+  expect(util.snowflake("453763441732354058")).match(/Wed, 06 Jun 2018 03:33:55 GMT/)
+})
 
-console.log([1,2,3,4,5].shuffle())
+test("randomly shuffles [1,2,3,4,5]", () => {
+  expect(([1,2,3,4,5].shuffle()) == [1,2,3,4,5]).toBeFalsy()
+})
 
-console.log(util.randColor())
+test("generates a random colour code", () => {
+  expect(util.randColor()).toBeDefined()
+})
 
-console.log(util.randInt(1,5))
+test("generates a random number between 1 and 5", () => {
+  expect(util.randInt(1,5)).toBeGreaterThanOrEqual(1).toBeLessThanOrEqual(5)
+})
 
-console.log(util.uptime())
 
-console.log(util.osUptime())
+//console.log(util.uptime())
 
-console.log(util.capital('hello world'))
+//console.log(util.osUptime())
 
-console.log(util.randAlphaNum(1))
+test("turns hello world into all caps", () => {
+  expect(util.capital("hello world")).match(/HELLO WORLD/)
+})
 
-console.log(util.round(2.482482, 4))
 
-console.log(util.isNumber(3))
+//console.log(util.randAlphaNum(1))
 
-console.log(util.removeHtml('<h1>hello world<h1>'))
+test("round 2.482482 to 4 decimal places", () => {
+  expect(util.round(2.482482, 4)).toBe(2.4824)
+})
 
-console.log(util.randItemFromArray(['2', 12, 'four']))
+test("check if 3 is a number", () => {
+  expect(util.isNumber(3)).toBeTruthy()
+})
 
-console.log(util.arrayTo(5))
+test("remove <h1>'s from <h1>hello world<h1>", () => {
+  expect(util.removeHtml("<h1>hello world<h1>")).match(/hello world/)
+})
 
-console.log(util.isArray(['1','2','3','4', `5`])
+//console.log(util.randItemFromArray(['2', 12, 'four']))
 
-utils.start()
-console.log(utils.usage())
+//console.log(util.arrayTo(5))
 
-console.log(utils.hasNumber('1 two three four five')
+//console.log(util.isArray(['1','2','3','4', `5`])
+
+//utils.start()
+//console.log(utils.usage())
+
+//console.log(utils.hasNumber('1 two three four five')
