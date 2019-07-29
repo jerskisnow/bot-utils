@@ -1,18 +1,18 @@
 {
   "name": "bot-utils",
-  "version": "1.2.1",
+  "version": "0.0.0-development",
   "description": "JavaScript program and bot Development tools",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
-    "test": "node tests.js"
+    "test": "jest",
+    "build": "tsc",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/axelgreavette/bot-utils"
   },
-  "dependencies": {
-    "clockit": "^1.0.0"
-  },
+  "dependencies": {},
   "keywords": [
     "discord",
     "bot",
@@ -23,5 +23,10 @@
     "dualcord"
   ],
   "author": "Axel Greavette",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^11.13.8",
+    "jest": "^24.7.1",
+    "semantic-release": "^15.13.18"
+  }
 }
