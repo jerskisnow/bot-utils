@@ -6,17 +6,26 @@ jobs:
     steps:
       - checkout
       - run: npm install
+      - run: npm run build
   test:
     docker:
       - image: "circleci/node:latest"
     steps:
       - checkout
-      - run: npm test
+      - run: npm install
+      - run: npm run build
+      - run: npm run test
+  publish:
+    docker:
+      - image: "circleci/node:latest"
+    steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - run: npm run semantic release
 workflows: 
   version: 2
   build_and_test:
     jobs:
       - build
-      - test:
-        - requires:
-          - build
+      - test

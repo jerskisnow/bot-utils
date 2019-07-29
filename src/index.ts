@@ -108,6 +108,8 @@ Array.prototype.random = function(a) {
     return a[Math.floor(Math.random() * (1 - a.length - 1)) + 1];
 }
 
+const randColour = () => randColor();
+
 //Exporting
 
 export {
@@ -115,6 +117,7 @@ export {
     randAlphaNumeric,
     randInt,
     randColor,
+    randColour,
     cpuUsage,
     snowflake
 }
