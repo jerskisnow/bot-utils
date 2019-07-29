@@ -1,4 +1,5 @@
-const { randColor, randColour } = require("../build");
+const { join: j } = require("path");
+const { randColor, randColour } = require(j(__dirname, "..", "build"));
 
 test("generates a random colour code", () => {
     expect(randColor()).toMatch(/^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/);
