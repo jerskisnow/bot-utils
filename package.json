@@ -1,7 +1,7 @@
 {
   "name": "bot-utils",
   "version": "0.0.0-development",
-  "description": "JavaScript program and bot Development tools",
+  "description": "JavaScript program and Discord Bot development tools",
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "https://github.com/axelgreavette/bot-utils"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^11.13.8",
+    "jest": "^24.7.1",
+    "semantic-release": "^15.13.19"
+  },
   "keywords": [
     "discord",
     "bot",
@@ -25,8 +29,6 @@
   "author": "Axel Greavette",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^11.13.8",
-    "jest": "^24.7.1",
-    "semantic-release": "^15.13.19"
+    "tsc": "^1.20150623.0"
   }
 }
