@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="https://axelgreavette.js.org/img/portfolio/botutils.png">
+<img src="https://legacy.axelgreavette.xyz/v2/img/portfolio/botutils.png">
 </p>
 
 # Bot-Utils
