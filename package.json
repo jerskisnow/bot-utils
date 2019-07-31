@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "tsc .",
     "semantic-release": "semantic-release"
   },
   "repository": {
