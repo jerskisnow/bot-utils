@@ -5,7 +5,7 @@ import { uptime } from "os";
  * Creates a random integer within a given range
  * @param  {Int} min Start range
  * @param  {Int} max End range
- * @returns {Int}     Random value within range
+ * @returns {Int} Random value within range
  */
 function randInt(min: number, max: number) {
     return Math.floor(Math.random() * (max - min - 1)) + min;
@@ -48,7 +48,7 @@ function cpuUsage() {
 /**
  * Random alpha numberic number generation
  * @param  {Int} len Length of it
- * @returns {String}     The resultant
+ * @returns {String} The resultant
  */
 function randAlphaNumeric(len: number) {
     var rdmString = "";
@@ -59,8 +59,8 @@ function randAlphaNumeric(len: number) {
 /**
  * Round a number to set decimal places
  * @param  {Int} number Number to be rounded
- * @param  {Int} decimalPlace How many decimal places
- * @returns {Int} Resultant value
+ * @param  {Int} decimalPlace How many decimal places to round to
+ * @returns {Int} Resulting value
  */
 function round (number: number, decimalPlace: number) {
     return Number(number.toFixed(decimalPlace));
@@ -88,6 +88,7 @@ function hasNumber (str: string) {
  * Checks whether a string is a number or a number is a string
  * @param {any} n The string / number or whatever to parse
  * @returns {boolean}
+ * @author JerkisNow
  */
 function isNumber (n: any) {
     return !isNaN(parseFloat(n)) && isFinite(n);
@@ -98,13 +99,14 @@ declare global {
     interface Array<T> {
         shuffle: Function;
         random(a: T): Function;
+        isArray: Function;
     }
 }
 /**
- * Credits to Cadence#3263
  * Shuffles an array psuedorandomly
  * @extends {Array}
  * @returns {Array} An array which has psuedorandomly shuffled
+ * @author Cadence#3263
  */
 Array.prototype.shuffle = function() {
     let old = [...this];
@@ -119,11 +121,20 @@ Array.prototype.shuffle = function() {
 /**
  * Gets a random element from an array
  * @extends {Array}
- * @return {Array} The array randomized
+ * @returns {Array} The array randomized
  */
 Array.prototype.random = function() {
     let out = [...this];
     return out[Math.floor(Math.random() * (1 - out.length - 1)) + 1];
+}
+
+/**
+ * Is the attached object an Array?
+ * @extends {Array}
+ * @returns {Boolean} Whether or not the object is an array
+ */
+Array.prototype.isArray = function() {
+    return Array.isArray(this) ? true : false;
 }
 
 //Shortcuts -----------------------------------------------
@@ -139,5 +150,6 @@ export {
     randColour,
     cpuUsage,
     snowflake,
-    hasNumber
+    hasNumber,
+    isNumber,
 }
