@@ -24,3 +24,4 @@ Easy to use utilities for JavaScript written Discord bots. Or you can use them a
 |`randAlphaNum(len)` | Returns a random alphanumeric |
 |`round(number, decimal-place)` | Returns a the given `number` rounded to the given `decimal-place` |
 |`hasNumber(string)` | Returns a boolean based on whether the supplied string contains a number or not |
+|`isNumber(input)` | Returns a boolean based on whether the supplied input is a number or not |

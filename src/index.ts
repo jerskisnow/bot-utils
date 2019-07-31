@@ -76,12 +76,21 @@ function snowflake (snowflake: number) {
 }
 
 /**
- * 
+ * Checks if a string __includes__ or __contains__ a number
  * @param {string} str The string to check for numbers
  * @returns {boolean} Whether or not it contains numbers
  */
 function hasNumber (str: string) {
     return /\d/.test(str);
+}
+
+/**
+ * Checks whether a string is a number or a number is a string
+ * @param {any} n The string / number or whatever to parse
+ * @returns {boolean}
+ */
+function isNumber (n: any) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
 //Array prototypes ----------------------------------------
