@@ -1,6 +1,6 @@
 {
   "name": "bot-utils",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "JavaScript program and Discord Bot development tools",
   "main": "build/index.js",
   "scripts": {
