@@ -13,9 +13,7 @@
     "url": "https://github.com/axelgreavette/bot-utils"
   },
   "dependencies": {
-    "@types/node": "^11.13.8",
-    "jest": "^24.7.1",
-    "semantic-release": "^15.13.19"
+    "@types/node": "^11.13.8"
   },
   "keywords": [
     "discord",
@@ -29,6 +27,8 @@
   "author": "Axel Greavette",
   "license": "ISC",
   "devDependencies": {
+    "jest": "^24.8.0",
+    "semantic-release": "^15.13.19",
     "tsc": "^1.20150623.0"
   }
 }
