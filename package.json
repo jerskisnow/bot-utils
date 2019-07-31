@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc --project ./tsconfig.json",
+    "build": "tsc",
     "semantic-release": "semantic-release"
   },
   "repository": {
