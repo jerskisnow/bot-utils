@@ -5,7 +5,7 @@
   "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsc .",
+    "build": "tsc",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -29,6 +29,6 @@
   "devDependencies": {
     "jest": "^24.8.0",
     "semantic-release": "^15.13.19",
-    "tsc": "^1.20150623.0"
+    "typescript": "^3.5.3"
   }
 }
