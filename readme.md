@@ -15,11 +15,12 @@ Easy to use utilities for JavaScript written Discord bots. Or you can use them a
 ## Documentation
 | Method | Description |
 |--|--|
-|`shuffle(array)` | Extends Array - Shuffles the given `array` |
-|`random(array)` | Extends Array - Picks a random item from the given `array`|
+|`Array.shuffle()` | Extends Array - Shuffles the attached `array` |
+|`Array.random()` | Extends Array - Picks a random item from the attached `array`|
 |`snowflake(snowflake)`| Returns the date of given `snowflake` |
 |`cpuUsage()` | Returns the CPU usage for the time when it was called |
 |`randColor()`| Returns a random `#` prefixed Hex colour code |
 |`randInt(min, max)`| Returns a random integer from a range of `mid` to `max` |
 |`randAlphaNum(len)` | Returns a random alphanumeric |
-|`round(number, decimal-place)` | Returns a the given `number` rounded to the given  `decimal-place` | 
+|`round(number, decimal-place)` | Returns a the given `number` rounded to the given `decimal-place` |
+|`hasNumber(string)` | Returns a boolean based on whether the supplied string contains a number or not |

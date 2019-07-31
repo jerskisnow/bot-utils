@@ -1,6 +1,6 @@
 import { uptime } from "os";
 
-//Functions -------------------------------------
+//Functions -----------------------------------------------
 /**
  * Creates a random integer within a given range
  * @param  {Int} min Start range
@@ -68,11 +68,20 @@ function round (number: number, decimalPlace: number) {
 
 /**
  * Returns the date of a snowflake
- * @param snowflake A Discord Snowflake
- * @returns Date of the string
+ * @param {string} snowflake A Discord Snowflake
+ * @returns {string} Date of the string
  */
 function snowflake (snowflake: number) {
     return new Date((snowflake * Math.pow(2, -22)) + 1420070400000).toUTCString();
+}
+
+/**
+ * 
+ * @param {string} str The string to check for numbers
+ * @returns {boolean} Whether or not it contains numbers
+ */
+function hasNumber (str: string) {
+    return /\d/.test(str);
 }
 
 //Array prototypes ----------------------------------------
@@ -101,13 +110,14 @@ Array.prototype.shuffle = function() {
 /**
  * Gets a random element from an array
  * @extends {Array}
- * @param  {Array} array Array to have value choosen
- * @return {Member}       Resultant selection
+ * @return {Array} The array randomized
  */
-Array.prototype.random = function(a) {
-    return a[Math.floor(Math.random() * (1 - a.length - 1)) + 1];
+Array.prototype.random = function() {
+    let out = [...this];
+    return out[Math.floor(Math.random() * (1 - out.length - 1)) + 1];
 }
 
+//Shortcuts -----------------------------------------------
 const randColour = () => randColor();
 
 //Exporting
@@ -119,5 +129,6 @@ export {
     randColor,
     randColour,
     cpuUsage,
-    snowflake
+    snowflake,
+    hasNumber
 }
