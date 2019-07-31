@@ -20,11 +20,8 @@ jobs:
           name: Install Modules
           command: npm install
       - run: 
-          name: Build JS
-          command: npm run build
-      - run:
-          name: Test JS
-          command: npm run test
+          name: Build + Test JS
+          command: npm run build && npm run test
   publish:
     docker:
       - image: "circleci/node:10"
