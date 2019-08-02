@@ -1,6 +1,6 @@
 {
   "name": "bot-utils",
-  "version": "1.8.0",
+  "version": "0.0.0-semantically-released",
   "description": "JavaScript program and Discord Bot development tools",
   "main": "build/index.js",
   "scripts": {
@@ -24,8 +24,8 @@
     "discord.js",
     "dualcord"
   ],
-  "author": "Axel Greavette",
-  "license": "ISC",
+  "author": "Axel Greavette (axelg.xyz)",
+  "license": "MIT",
   "devDependencies": {
     "jest": "^24.8.0",
     "semantic-release": "^15.13.19",
