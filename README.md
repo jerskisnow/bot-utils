@@ -11,26 +11,26 @@
 
 Easy to use utilities for JavaScript written Discord bots. Or you can use them any Javascript program...
 
-~~For the version using classes visit [here](https://github.com/axelgreavette/bot-utils/tree/classes)~~  Don't do this right now... It's wayyyyy behind.
+~~For the version using classes visit [here](https://github.com/axelgreavette/bot-utils/tree/classes)~~  Don't do this right now... It's way behind and not working correctly.
 
 ## Contributing
 If you wish to contribute to **bot-utils** continued development make sure to take a look at [this](https://github.com/axelgreavette/bot-utils/blob/master/CONTRIBUTING.md) file.
 
 ## Method Documentation
-| Method | Description |
-|--|--|
-|`Array.shuffle()` | Extends Array - Shuffles the attached `array` |
-|`Array.random()` | Extends Array - Picks a random item from the attached `array`|
-|`Object.isArray()` | Extends Object - Returns whether or not the attached `object` is actually an `array` |
-|`snowflake(snowflake)`| Returns the date of given `snowflake` |
-|`cpuUsage()` | Returns the CPU usage for the time when it was called |
-|`randColor()`| Returns a random `#` prefixed Hex colour code |
-|`randInt(min, max)`| Returns a random integer from a range of `mid` to `max` |
-|`randAlphaNum(len)` | Returns a random alphanumeric |
-|`round(number, decimal-place)` | Returns a the given `number` rounded to the given `decimal-place` |
-|`hasNumber(string)` | Returns a boolean based on whether the supplied string contains a number or not |
-|`isNumber(input)` | Returns a boolean based on whether the supplied input is a number or not |
-|`uptime()` | Returns process uptime formatted into a human readable string |
+| Method | Extends | Description |
+|--|--|--|
+|`Array.shuffle()` | Array | Shuffles the attached `array` |
+|`Array.random()` | Array | Picks a random item from the attached `array`|
+|`Object.isArray()` | Object | Returns whether or not the attached `object` is actually an `array` |
+|`snowflake(snowflake)`| N/A |Returns the date of given `snowflake` |
+|`cpuUsage()` | N/A |Returns the CPU usage for the time when it was called |
+|`randColor()`| N/A |Returns a random `#` prefixed Hex colour code |
+|`randInt(min, max)`| N/A |Returns a random integer from a range of `mid` to `max` |
+|`randAlphaNum(len)` | N/A |Returns a random alphanumeric |
+|`round(number, decimal-place)` | N/A |Returns a the given `number` rounded to the given `decimal-place` |
+|`hasNumber(string)` | N/A |Returns a boolean based on whether the supplied string contains a number or not |
+|`isNumber(input)` | N/A |Returns a boolean based on whether the supplied input is a number or not |
+|`uptime()` | N/A |Returns process uptime formatted into a human readable string |
 
 ## Contributors ✨
 
