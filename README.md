@@ -1,12 +1,12 @@
 <p align="center"> 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 <img src="https://legacy.axelgreavette.xyz/v2/img/portfolio/botutils.png">
 </p>
 
 # Bot-Utils
 [![NPM](https://nodei.co/npm/bot-utils.png?)](https://nodei.co/npm/bot-utils/) 
 
-[![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils) [![Downloads](https://img.shields.io/npm/dt/bot-utils.svg?maxAge=3600)](https://www.npmjs.com/package/bot-utils) [![CircleCI](https://circleci.com/gh/axelgreavette/bot-utils.svg?style=shield)](https://circleci.com/gh/axelgreavette/bot-utils) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils) [![Downloads](https://img.shields.io/npm/dt/bot-utils.svg?maxAge=3600)](https://www.npmjs.com/package/bot-utils) [![CircleCI](https://circleci.com/gh/axelgreavette/bot-utils.svg?style=shield)](https://circleci.com/gh/axelgreavette/bot-utils) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 
 
 Easy to use utilities for JavaScript written Discord bots. Or you can use them any Javascript program...
