@@ -3,6 +3,7 @@
   "version": "0.0.0-semantically-released",
   "description": "JavaScript program and Discord Bot development tools",
   "main": "build/index.js",
+  "hompage": "https://github.com/axelgreavette/bot-utils",
   "scripts": {
     "test": "jest",
     "build": "tsc",
@@ -11,6 +12,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/axelgreavette/bot-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/axelgreavette/bot-utils/issues",
+    "email": "vultureavatar@gmail.com"
   },
   "dependencies": {
     "@types/node": "^11.13.8"
