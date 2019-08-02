@@ -1,4 +1,5 @@
 <p align="center"> 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 <img src="https://legacy.axelgreavette.xyz/v2/img/portfolio/botutils.png">
 </p>
 
@@ -30,3 +31,19 @@ If you wish to contribute to **bot-utils** continued development make sure to ta
 |`hasNumber(string)` | Returns a boolean based on whether the supplied string contains a number or not |
 |`isNumber(input)` | Returns a boolean based on whether the supplied input is a number or not |
 |`uptime()` | Returns process uptime formatted into a human readable string |
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://axelg.xyz"><img src="https://avatars1.githubusercontent.com/u/31705527?v=4" width="100px;" alt="Axel Greavette"/><br /><sub><b>Axel Greavette</b></sub></a><br /><a href="#infra-axelgreavette" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=axelgreavette" title="Tests">⚠️</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=axelgreavette" title="Documentation">📖</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=axelgreavette" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
