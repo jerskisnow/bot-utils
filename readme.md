@@ -12,6 +12,9 @@ Easy to use utilities for JavaScript written Discord bots. Or you can use them a
 
 ~~For the version using classes visit [here](https://github.com/axelgreavette/bot-utils/tree/classes)~~  Don't do this right now... It's wayyyyy behind.
 
+## Contributing
+If you wish to contribute to **bot-utils** continued development make sure to take a look at [this](https://github.com/axelgreavette/bot-utils/blob/master/CONTRIBUTING.md) file.
+
 ## Method Documentation
 | Method | Description |
 |--|--|
@@ -27,6 +30,3 @@ Easy to use utilities for JavaScript written Discord bots. Or you can use them a
 |`hasNumber(string)` | Returns a boolean based on whether the supplied string contains a number or not |
 |`isNumber(input)` | Returns a boolean based on whether the supplied input is a number or not |
 |`uptime()` | Returns process uptime formatted into a human readable string |
-
-## Contributing
-If you wish to contribute to **bot-utils** continued development make sure to take a look at [this](https://github.com/axelgreavette/bot-utils/blob/master/CONTRIBUTING.md) file
