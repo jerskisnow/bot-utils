@@ -1,5 +1,3 @@
-import { uptime } from "os";
-
 //Functions -----------------------------------------------
 /**
  * Creates a random integer within a given range
@@ -26,7 +24,7 @@ function randColor() {
  * @returns {String} A human readable string of uptime
  */
 function cpuUsage() {
-    let msec = Number(uptime().toFixed(0)) * 1000;
+    let msec = Number(process.uptime().toFixed(0)) * 1000;
     let days = Math.floor(msec / 1000 / 60 / 60 / 24);
     msec -= days * 1000 * 60 * 60 * 24;
     let hours = Math.floor(msec / 1000 / 60 / 60);
@@ -94,12 +92,34 @@ function isNumber (n: any) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
+/**
+ * Returns process uptime in a human readablel format
+ * @returns {string} The result
+ */
+function uptime() {
+    let msec = Number(process.uptime().toFixed(0)) * 1000;
+    let days = Math.floor(msec / 1000 / 60 / 60 / 24);
+    msec -= days * 1000 * 60 * 60 * 24;
+    let hours = Math.floor(msec / 1000 / 60 / 60);
+    msec -= hours * 1000 * 60 * 60;
+    let mins = Math.floor(msec / 1000 / 60);
+    msec -= mins * 1000 * 60;
+    let secs = Math.floor(msec / 1000);
+    let timestr = "";
+
+    if (days > 0) timestr += days + "d ";
+    else if (hours > 0) timestr += hours + "h ";
+    else if (mins > 0) timestr += mins + "m ";
+    else if (secs > 0) timestr += secs + "s";
+
+    return timestr
+}
+
 //Array prototypes ----------------------------------------
 declare global {
     interface Array<T> {
         shuffle: Function;
         random(a: T): Function;
-        isArray: Function;
     }
 }
 /**
@@ -128,19 +148,27 @@ Array.prototype.random = function() {
     return out[Math.floor(Math.random() * (1 - out.length - 1)) + 1];
 }
 
+//Object prototypes ---------------------------------------
+declare global {
+    interface Object {
+        isArray: Function;
+    }
+}
+
+
 /**
  * Is the attached object an Array?
- * @extends {Array}
+ * @extends {Object}
  * @returns {Boolean} Whether or not the object is an array
  */
-Array.prototype.isArray = function() {
+Object.prototype.isArray = function() {
     return Array.isArray(this) ? true : false;
 }
 
 //Shortcuts -----------------------------------------------
 const randColour = () => randColor();
 
-//Exporting
+//Export
 
 export {
     round,
@@ -152,4 +180,5 @@ export {
     snowflake,
     hasNumber,
     isNumber,
+    uptime
 }

@@ -17,6 +17,7 @@ Easy to use utilities for JavaScript written Discord bots. Or you can use them a
 |--|--|
 |`Array.shuffle()` | Extends Array - Shuffles the attached `array` |
 |`Array.random()` | Extends Array - Picks a random item from the attached `array`|
+|`Object.isArray()` | Extends Object - Returns whether or not the attached `object` is actually an `array` |
 |`snowflake(snowflake)`| Returns the date of given `snowflake` |
 |`cpuUsage()` | Returns the CPU usage for the time when it was called |
 |`randColor()`| Returns a random `#` prefixed Hex colour code |
@@ -25,3 +26,4 @@ Easy to use utilities for JavaScript written Discord bots. Or you can use them a
 |`round(number, decimal-place)` | Returns a the given `number` rounded to the given `decimal-place` |
 |`hasNumber(string)` | Returns a boolean based on whether the supplied string contains a number or not |
 |`isNumber(input)` | Returns a boolean based on whether the supplied input is a number or not |
+|`uptime()` | Returns process uptime formatted into a human readable string |
