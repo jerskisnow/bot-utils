@@ -5,7 +5,7 @@
 # Bot-Utils
 [![NPM](https://nodei.co/npm/bot-utils.png?)](https://nodei.co/npm/bot-utils/) 
 
-[![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils) [![Downloads](https://img.shields.io/npm/dt/bot-utils.svg?maxAge=3600)](https://www.npmjs.com/package/bot-utils) [![CircleCI](https://circleci.com/gh/axelgreavette/bot-utils.svg?style=shield)](https://circleci.com/gh/axelgreavette/bot-utils) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=shield)](#contributors)
+[![npm version](https://badge.fury.io/js/bot-utils.svg)](https://badge.fury.io/js/bot-utils) [![Downloads](https://img.shields.io/npm/dt/bot-utils.svg?maxAge=3600)](https://www.npmjs.com/package/bot-utils) [![CircleCI](https://circleci.com/gh/axelgreavette/bot-utils.svg?style=shield)](https://circleci.com/gh/axelgreavette/bot-utils) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 
 
@@ -41,6 +41,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://axelg.xyz"><img src="https://avatars1.githubusercontent.com/u/31705527?v=4" width="100px;" alt="Axel Greavette"/><br /><sub><b>Axel Greavette</b></sub></a><br /><a href="#infra-axelgreavette" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=axelgreavette" title="Tests">⚠️</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=axelgreavette" title="Documentation">📖</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=axelgreavette" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/jerskisnow"><img src="https://avatars0.githubusercontent.com/u/29165327?v=4" width="100px;" alt="jerskisnow"/><br /><sub><b>jerskisnow</b></sub></a><br /><a href="https://github.com/axelgreavette/bot-utils/commits?author=jerskisnow" title="Code">💻</a> <a href="https://github.com/axelgreavette/bot-utils/commits?author=jerskisnow" title="Documentation">📖</a></td>
   </tr>
 </table>
 
