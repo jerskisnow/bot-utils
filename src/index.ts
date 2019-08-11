@@ -145,7 +145,7 @@ Array.prototype.shuffle = function() {
  */
 Array.prototype.random = function() {
     let out = [...this];
-    return out[Math.floor(Math.random() * (1 - out.length - 1)) + 1];
+    return out[~~(out.length * Math.random())];
 }
 
 //Object prototypes ---------------------------------------
